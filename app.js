@@ -14,6 +14,11 @@ app.get('/addblog',(req, res) =>{
     res.render("addBlog")
 })
 
+app.get('/allblog',(req, res) =>{
+    res.render("allBlog")
+})
+
+
 //opening port for this server
 app.listen(process.env.PORT,() => {
 console.log("Port opened at " + process.env.PORT);
